@@ -1,0 +1,28 @@
+bin/
+tmp/
+target/
+.settings/
+.classpath
+.project
+.mvn
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# intellij projects
+*.iml
+.idea/
+/.project
+/.settings/
+*.log*
+*.tmp
+.DS_Store
+*.tmp
+*.log
+*data.sql.script
+*.lck
+data.sql.properties
+*data2.sql.script
+data2.sql.properties
+*.jar
+
