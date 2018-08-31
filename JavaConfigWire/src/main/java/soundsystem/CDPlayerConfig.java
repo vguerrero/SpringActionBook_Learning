@@ -1,7 +1,9 @@
 package soundsystem;
 
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 //page 36
 @Configuration
@@ -16,6 +18,7 @@ public class CDPlayerConfig {
 	}
 
 	@Bean
+	@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 	public CDPlayer cdPlayer(CompactDisc cd) {
 		return new CDPlayer(cd);
 	}
