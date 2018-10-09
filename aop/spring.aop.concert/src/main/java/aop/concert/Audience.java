@@ -6,6 +6,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
+//page 106
 @Aspect
 public class Audience {
 
