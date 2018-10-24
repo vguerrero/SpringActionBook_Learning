@@ -1,16 +1,20 @@
 package vmgs.web;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping("/")
 public class HomeController {
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	
+	@RequestMapping(method = RequestMethod.GET)
 	public String home() {
 		return "home";
 	}
-	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+
+	@RequestMapping(value = "hello", method = RequestMethod.GET)
 	public String home2() {
 		return "hello";
 	}
